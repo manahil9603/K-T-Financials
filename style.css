@@ -1,0 +1,485 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background-color: #0a2540;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+.semi-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+/* About image as horizontal ellipse */
+.ellipse {
+  width: 300px;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Services grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* All service images uniform */
+.service img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+footer {
+  background-color: #0a2540;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+/* Email icon styled like Gmail: white fill, red outline */
+.custom-email-icon {
+  font-size: 28px;
+  color: white;
+  padding: 5px;
+  border: 2px solid red;
+  border-radius: 50%;
+  background-color: red; /* Optional: simulate red background */
+}
+
+/* LinkedIn icon styling */
+.linkedin-icon {
+  font-size: 24px;
+  color: white;
+  background-color: #0077b5;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Align icons nicely */
+#contact i {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+
+/* Sticky Navigation */
+.sticky-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(10, 37, 64, 0.95);
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  transform: translateY(-100%);
+}
+
+.sticky-nav.visible {
+  transform: translateY(0);
+}
+
+.sticky-nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo-small {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.sticky-nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sticky-nav li {
+  margin: 0 15px;
+}
+
+.sticky-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.sticky-nav a:hover {
+  color: #4dabf7;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+}
+
+.testimonial {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  margin: 20px;
+  text-align: center;
+}
+
+.testimonial p {
+  font-style: italic;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.client-info h4 {
+  margin: 0;
+  color: #0a2540;
+}
+
+.client-info p {
+  margin: 5px 0 0;
+  color: #6c757d;
+  font-size: 14px;
+}
+
+.swiper {
+  width: 100%;
+  padding: 50px 0;
+}
+
+.swiper-pagination-bullet-active {
+  background: #0a2540 !important;
+}
+
+/* Add some padding to sections to account for sticky nav */
+section {
+  padding-top: 80px;
+  margin-top: -80px;
+}
+
+/* Animation delays for AOS */
+[data-aos-delay="100"] {
+  transition-delay: 100ms;
+}
+
+[data-aos-delay="200"] {
+  transition-delay: 200ms;
+}
+
+/* Add these styles to your existing CSS */
+
+/* Blue transparent headings */
+h1, h2 {
+  background-color: rgba(10, 37, 64, 0.8); /* Semi-transparent blue */
+  color: white;
+  padding: 10px 20px;
+  display: inline-block;
+  border-radius: 5px;
+  margin: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Button-style navigation */
+nav li {
+  display: inline-block;
+  margin: 0 10px;
+  transition: all 0.3s ease;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Semi-circle pop-up animation */
+.semi-circle {
+  width: 70vw;
+  height: 35vw;
+  border-top-left-radius: 50vw;
+  border-top-right-radius: 50vw;
+  overflow: hidden;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  transform: translateY(100%);
+  opacity: 0;
+  animation: popUp 1s ease-out forwards;
+  animation-delay: 0.5s;
+  box-shadow: 0 20px 40px rgba(182, 179, 179, 0.3);
+}
+
+@keyframes popUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  80% {
+    transform: translateY(-10%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Sticky Navigation adjustments */
+.sticky-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(10, 37, 64, 0.95);
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  transform: translateY(-100%);
+  padding: 10px 0;
+}
+
+
+
+.sticky-nav .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sticky-nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sticky-nav li {
+  margin: 0 10px;
+}
+
+.sticky-nav a {
+  padding: 8px 15px;
+  font-size: 14px;
+}
+
+/* Testimonials Section adjustments */
+.testimonials-section {
+  background-color: #f8f9fa;
+  padding: 80px 0;
+}
+
+.testimonial {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  margin: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.testimonial:hover {
+  transform: translateY(-5px);
+}
+
+/* Section spacing adjustments */
+section {
+  padding: 100px 0;
+  position: relative;
+}
+
+/* Make sure content doesn't hide behind sticky nav */
+section::before {
+  content: '';
+  display: block;
+  height: 80px;
+  margin-top: -80px;
+  visibility: hidden;
+}
+/* Add these styles to your existing CSS */
+
+/* Ensure navigation stays on top of everything */
+.sticky-nav {
+  z-index: 9999; /* Very high z-index to stay on top */
+}
+
+/* Services grid animations */
+.services-grid {
+  perspective: 1000px; /* For 3D effect */
+}
+
+.service {
+  position: relative;
+  transition: all 0.5s ease;
+  transform-style: preserve-3d;
+  animation: fadeInUp 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+/* Individual delays for each service item */
+.service:nth-child(1) { animation-delay: 0.2s; }
+.service:nth-child(2) { animation-delay: 0.4s; }
+.service:nth-child(3) { animation-delay: 0.6s; }
+.service:nth-child(4) { animation-delay: 0.8s; }
+.service:nth-child(5) { animation-delay: 1.0s; }
+.service:nth-child(6) { animation-delay: 1.2s; }
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hover effect for services */
+.service:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 15px 30px rgba(10, 37, 64, 0.2);
+}
+
+.service img {
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.service:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Service content styling */
+.service h3 {
+  margin: 15px 0 10px;
+  color: #0a2540;
+  transition: color 0.3s ease;
+}
+
+.service p {
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.service:hover h3,
+.service:hover p {
+  color: #0a2540;
+}
+
+/* Ensure all animated elements don't overlap nav */
+section {
+  position: relative;
+  z-index: 1; /* Below nav */
+}
+
+/* Enhance the sticky nav visibility */
+.sticky-nav {
+  backdrop-filter: blur(5px); /* Frosted glass effect */
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.sticky-nav a {
+  position: relative;
+  overflow: hidden;
+}
+
+.sticky-nav a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: white;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+.sticky-nav a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Make sure images don't cause layout shifts */
+.service img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
